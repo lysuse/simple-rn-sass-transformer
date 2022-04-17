@@ -9,7 +9,7 @@ module.exports = (async () => {
     transformer: {
       babelTransformerPath: require.resolve('./transformer.js'),
       getTransformOptions: async () => ({
-        // 通过global注入的字体大小适配方法，如果需要通过引入注入方法，可以使用 fileImports: `import ScreenUtils from '@/utils/screen;` 注入
+        // 通过global注入的字体大小适配方法，如果需要通过引入注入方法，可以使用 fileImports: `import ScreenUtils from '@/utils/screen';` 注入
         fontSizeUnitFunc: 'setSpText',
         // 通过global注入的非字体大小适配方法
         sizeUnitFunc: 'scaleSize',
